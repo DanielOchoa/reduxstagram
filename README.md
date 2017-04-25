@@ -5,6 +5,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
 
 ## Custom
  - Added react-router with `yarn add react-router-dom@next`.
+ - Added react-redux `yarn add react-redux`.
 
 ## Table of Contents
 
