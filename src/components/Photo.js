@@ -12,3 +12,11 @@ class Photo extends Component {
 }
 
 export default Photo;
+// example of simple fn
+/*
+const Photo = ({ match }) => (
+  <div className="single-photo">
+    Id for photo: {match.params.photoId}
+  </div>
+);
+*/

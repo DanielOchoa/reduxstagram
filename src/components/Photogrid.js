@@ -7,7 +7,7 @@ class Photogrid extends Component {
       <div className="photo-grid">
         I'm the photo grid
         <br/>
-        <Link to="/photo/1">go to photo</Link>
+        <Link to="/photos/1">go to photo</Link>
       </div>
     );
   }
