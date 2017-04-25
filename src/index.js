@@ -11,14 +11,20 @@ import Header from './components/Header';
 import Photogrid from './components/Photogrid';
 import Photo from './components/Photo';
 
+// redux stuff - see store file
+import { store, history } from './store';
+import { Provider } from 'react-redux';
+
 const router = (
-  <Router>
-    <App>
-      <Header/>
-      <Route exact path="/" component={Photogrid}/>
-      <Route path="/photos/:photoId" component={Photo}/>
-    </App>
-  </Router>
+  <Provider store={store}>
+    <Router history={history}>
+      <App>
+        <Header/>
+        <Route exact path="/" component={Photogrid}/>
+        <Route path="/photos/:photoId" component={Photo}/>
+      </App>
+    </Router>
+  </Provider>
 );
 
 ReactDOM.render(router, document.getElementById('root'));
